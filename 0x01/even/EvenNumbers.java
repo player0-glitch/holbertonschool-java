@@ -4,7 +4,7 @@ public class EvenNumbers {
       if (i % 2 != 0)
         continue;
       System.out.print(i);
-      if (i < 99) {
+      if (i < 98) {
         System.out.print(", ");
       }
     }
