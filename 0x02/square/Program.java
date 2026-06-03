@@ -1,5 +1,5 @@
 public class Program {
-  public void main(String[] args) {
+  public static void main(String[] args) {
     try {
       double side1 = -5;
       double result = Square.area(side1);
