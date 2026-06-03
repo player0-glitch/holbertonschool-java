@@ -8,10 +8,10 @@ public class Program {
     boolean characterIsUppsercase4 = Character.IsUpper('f');
     boolean characterIsUppsercase5 = Character.IsUpper('G');
 
-    System.out.printf("%b\n" + characterIsUppsercase1);
-    System.out.printf("%b\n" + characterIsUppsercase2);
-    System.out.printf("%b\n" + characterIsUppsercase3);
-    System.out.printf("%b\n" + characterIsUppsercase4);
-    System.out.printf("%b\n" + characterIsUppsercase5);
+    System.out.printf("%b\n", characterIsUppsercase1);
+    System.out.printf("%b\n", characterIsUppsercase2);
+    System.out.printf("%b\n", characterIsUppsercase3);
+    System.out.printf("%b\n", characterIsUppsercase4);
+    System.out.printf("%b\n", characterIsUppsercase5);
   }
 }
