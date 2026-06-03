@@ -11,7 +11,7 @@ public class Program {
     Employee documentationEmployee2 = new Employee(3000);
     Manager documentationManager = new Manager(4980);
 
-    System.out.printf("Fixed Salary: %.2f - Total Salary: %.2f - Bonus Amount: %.2f\n",
+    System.out.printf("Fixed Salary: %,2f - Total Salary: %,2f - Bonus Amount: %,2f\n",
         engineeringEmployee1.getFixedSalary(),
         engineeringEmployee1.calculateTotalSalary(engineeringDepartment),
         engineeringEmployee1.calculateBonus(engineeringDepartment));
