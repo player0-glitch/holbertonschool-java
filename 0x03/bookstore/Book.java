@@ -25,7 +25,7 @@ public class Book {
   }
 
   public void setTitle(String title) throws InvalidBookException {
-    if (title == null)
+    if (title == null || title.trim().length() < 3)
       throw new InvalidBookException("Invalid book title");
     this.title = title;
   }
