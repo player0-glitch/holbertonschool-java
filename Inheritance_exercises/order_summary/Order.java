@@ -34,10 +34,10 @@ public class Order {
 
       System.out.println("----------------------------");
       double discount = totalProducts * (discountPercentage / 100.0);
-      System.out.printf("DISCOUNT: %.2f%n", discount);
-      System.out.printf("TOTAL PRODUCTS: %.2f%n", totalProducts);
+      System.out.printf("DISCOUNT: %,2f%n", discount);
+      System.out.printf("TOTAL PRODUCTS: %,2f%n", totalProducts);
       System.out.println("----------------------------");
-      System.out.printf("TOTAL ORDER: %.2f%n", calculateTotal());
+      System.out.printf("TOTAL ORDER: %,2f%n", calculateTotal());
       System.out.println("----------------------------");
     }
   }
