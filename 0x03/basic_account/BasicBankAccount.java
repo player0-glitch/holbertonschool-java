@@ -26,7 +26,7 @@ public class BasicBankAccount {
 
   public void deposit(double value) throws InvalidOperationException {
     if (value <= 0) {
-      throw new InvalidOperationException("Deposit amount must be greater than zero.");
+      throw new InvalidOperationException("Deposit amount must be greater than 0");
     }
     this.balance += value;
   }
@@ -38,7 +38,7 @@ public class BasicBankAccount {
 
   public void withdraw(double value) throws InvalidOperationException {
     if (value <= 0) {
-      throw new InvalidOperationException("Withdrawal amount must be greater than zero.");
+      throw new InvalidOperationException("Withdrawal amount must be greater than 0");
     }
     if (value > this.balance) {
       throw new InvalidOperationException("Withdrawal amount must be less than current balance ");
