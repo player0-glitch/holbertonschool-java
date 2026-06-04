@@ -1,7 +1,7 @@
 public class CharacterGame {
   public int currentHealth;
   public String name;
-  public String status;
+  private String status;
 
   public CharacterGame(String name, int currentHealth, String status) {
     this.name = name;
@@ -43,6 +43,10 @@ public class CharacterGame {
 
   public void setName(String name) {
     this.name = name;
+  }
+
+  public String getStatus() {
+    return this.status;
   }
 
   public void displayStatus() {
