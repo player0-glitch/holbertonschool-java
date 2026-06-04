@@ -1,10 +1,10 @@
 import exceptions.InvalidOperationException;
 
 public class FeeBasedBankAccount extends BasicBankAccount {
-  private double transactionCount;
+  private int transactionCount;
 
-  public FeeBasedBankAccount(String accountNumber, double annualInterestRate) {
-    super(accountNumber, annualInterestRate);
+  public FeeBasedBankAccount(String accountNumber, int annualInterestRate) {
+    super(accountNumber, (double) annualInterestRate);
     this.transactionCount = 0;
   }
 
@@ -31,6 +31,6 @@ public class FeeBasedBankAccount extends BasicBankAccount {
   }
 
   public int getTransactionCount() {
-    return (int) this.transactionCount;
+    return this.transactionCount;
   }
 }
