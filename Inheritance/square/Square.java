@@ -9,6 +9,10 @@ public class Square extends Rectangle {
     this.side = side;
   }
 
+  public String toString() {
+    return String.format("[Square] %d\n", this.side);
+  }
+
   public double getSide() {
     return this.side;
   }

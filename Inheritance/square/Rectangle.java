@@ -23,7 +23,7 @@ public class Rectangle extends GeometricShape {
   }
 
   public String toString() {
-    return String.format("[Rectangle] %d / %d\n", this.width, this.width);
+    return String.format("[Rectangle] %d / %d\n", this.width, this.height);
   }
 
   @Override
