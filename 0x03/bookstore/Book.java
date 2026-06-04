@@ -1,12 +1,12 @@
 import exceptions.InvalidAuthorException;
-import exceptions.InvalidBookException;
+import exceptions.InvalidOperationException;
 
 public class Book {
   private String title;
   private String author;
   private double price;
 
-  public Book(String title, String author, double price) throws InvalidAuthorException, InvalidBookException {
+  public Book(String title, String author, double price) throws InvalidAuthorException, InvalidOperationException {
     setAuthor(author);
     setTitle(title);
     setPrice(price);
@@ -24,9 +24,9 @@ public class Book {
     return this.price;
   }
 
-  public void setTitle(String title) throws InvalidBookException {
+  public void setTitle(String title) throws InvalidOperationException {
     if (title == null || title.trim().length() < 3)
-      throw new InvalidBookException("Invalid book title");
+      throw new InvalidOperationException("Invalid book title");
     this.title = title;
   }
 
@@ -41,9 +41,9 @@ public class Book {
     this.author = author;
   }
 
-  public void setPrice(double price) throws InvalidBookException {
+  public void setPrice(double price) throws InvalidOperationException {
     if (price <= 0)
-      throw new InvalidBookException("Invalid book price");
+      throw new InvalidOperationException("Invalid book price");
     this.price = price;
   }
 }

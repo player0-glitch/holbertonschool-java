@@ -1,9 +1,10 @@
 import exceptions.InvalidAuthorException;
-import exceptions.InvalidBookException;
+import exceptions.InvalidOperationException;
+import products.Book;
 
 public class GoldEditionBook extends Book {
   public GoldEditionBook(String title, String author, double price)
-      throws InvalidAuthorException, InvalidBookException {
+      throws InvalidAuthorException, InvalidOperationException {
     super(title, author, price);
   }
 
