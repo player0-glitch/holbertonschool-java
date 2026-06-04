@@ -1,13 +1,13 @@
 import providers.Shipping;
 
 public class Order {
-  private int order;
+  private int code;
   private double weight;
   private double total;
   private Shipping shipping;
 
   public Order(int order, double weight, double total) {
-    this.order = order;
+    this.code = order;
     this.weight = weight;
     this.total = total;
   }
@@ -16,8 +16,8 @@ public class Order {
     this.shipping = shipping;
   }
 
-  public int getOrder() {
-    return this.order;
+  public int getCode() {
+    return this.code;
   }
 
   public double getWeight() {
