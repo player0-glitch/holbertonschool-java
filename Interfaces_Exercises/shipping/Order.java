@@ -1,4 +1,3 @@
-import java.math.BigDecimal; 
 import providers.Shipping;
 
 public class Order {
@@ -26,9 +25,7 @@ public class Order {
   }
 
   public double getTotal() {
-    BigDecimal bd=BigDecimal.valueOf(this.total);
-    bd = bd.setScale(2,RoundingMode.HALF_UP);
-    return bd.doubleValue();
+    return this.total;
   }
 
   public Shipping getShipping() {
