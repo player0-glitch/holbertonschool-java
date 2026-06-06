@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TodoList {
-  private final List<Task> tasks;
+  private List<Task> tasks;
 
   public TodoList() {
     this.tasks = new ArrayList<>();
