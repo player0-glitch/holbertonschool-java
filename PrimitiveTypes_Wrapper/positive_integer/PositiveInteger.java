@@ -16,6 +16,11 @@ public class PositiveInteger {
     }
   }
 
+  public void setValor(int value) {
+    validate(value);
+    this.value = value;
+  }
+
   public void setValue(int value) {
     validate(value);
     this.value = value;
