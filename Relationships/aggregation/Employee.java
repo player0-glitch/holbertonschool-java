@@ -10,7 +10,7 @@ public class Employee {
   }
 
   public void introduce() {
-    System.out.printf("Code: %s\n", this.code);
+    System.out.printf("Code: %d\n", this.code);
     System.out.printf("Name: %s\n", this.name);
     System.out.printf("District: %s\n", this.address.getDistrict());
     System.out.printf("City: %s\n", this.address.getCity());
