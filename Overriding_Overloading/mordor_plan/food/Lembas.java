@@ -2,6 +2,6 @@ package food;
 
 public class Lembas extends Food {
   public Lembas() {
-    super(2);
+    super(3);
   }
 }

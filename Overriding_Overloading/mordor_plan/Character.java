@@ -24,7 +24,7 @@ public class Character {
       return new Angry();
     } else if (this.happinessPoints <= 0 && this.happinessPoints >= -5) {
       return new Sad();
-    } else if (this.happinessPoints <= 15 && this.happinessPoints > 0) {
+    } else if (this.happinessPoints <= 15 && this.happinessPoints >= 1) {
       return new Happy();
     } else {
       return new VeryHappy();

@@ -2,6 +2,6 @@ package food;
 
 public class Mushroom extends Food {
   public Mushroom() {
-    super(2);
+    super(-10);
   }
 }
