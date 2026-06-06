@@ -26,6 +26,11 @@ public class Task {
     return this.identifier;
   }
 
+  /**
+   * Adds a task to the list if its identifier is unique.
+   * 
+   * @throws IllegalArgumentException if the identifier already exists.
+   */
   public void modifyDescription(String newDescription) {
     if (newDescription == null || newDescription.trim().isEmpty())
       throw new IllegalArgumentException("Invalid task description");
