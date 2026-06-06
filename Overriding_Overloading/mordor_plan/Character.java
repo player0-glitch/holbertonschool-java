@@ -34,6 +34,6 @@ public class Character {
   @Override
   public String toString() {
     Mood currentMood = getCurrentMood();
-    return this.happinessPoints + "-" + currentMood.getClass().getSimpleName();
+    return this.happinessPoints + " - " + currentMood.getClass().getSimpleName();
   }
 }
