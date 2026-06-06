@@ -14,7 +14,7 @@ public class Employee {
     System.out.printf("Name: %s%n", this.name);
     System.out.printf("District: %s%n", this.address.getDistrict());
     System.out.printf("City: %s%n", this.address.getCity());
-    System.out.printf("Country: %s%n", this.address.getCountry());
+    System.out.printf("Country: %s", this.address.getCountry());
   }
 
   public String getName() {
