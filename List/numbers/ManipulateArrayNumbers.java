@@ -18,7 +18,8 @@ public class ManipulateArrayNumbers {
     int position = findNumberPosition(list, numberToRemove);
 
     if (position == -1)
-      throw new IllegalArgumentException("Number not found in the list");
+      System.out.println("Number not found in the list");
+
     list.remove(numberToRemove);
   }
 
