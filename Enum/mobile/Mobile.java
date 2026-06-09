@@ -53,7 +53,7 @@ public class Mobile {
       System.out.println("Your contact list is empty");
       return;
     }
-    System.out.println("--- Contact List ---");
+    // System.out.println("--- Contact List ---");
     for (Contact c : contactList)
       System.out.println(c.getName() + " -> " + c.getPhoneNumber() + " (" + c.getType() + ")");
   }
