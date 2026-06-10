@@ -10,7 +10,8 @@ public class PhraseAnalyzer {
     }
 
     String cleanedSentence = sentence.toLowerCase();
-    cleanedSentence = cleanedSentence.replaceAll("[?.!]", "");
+
+    cleanedSentence = cleanedSentence.replaceAll("[?.,!]", "");
 
     String[] words = cleanedSentence.split("\\s+");
 
