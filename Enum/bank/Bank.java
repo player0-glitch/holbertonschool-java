@@ -28,7 +28,7 @@ public class Bank {
   public boolean addCustomer(String branchName, String customerName, double initialTransaction) {
     Branch branch = findBranches(branchName);
     if (branch != null) {
-      return branch.addCustomer(customerName, initialTransaction);
+      return branch.newCustomer(customerName, initialTransaction);
     }
     return false;
   }
@@ -54,10 +54,11 @@ public class Bank {
       if (printTransactions) {
         // System.out.println("Transactions:");
         for (double t : c.getTransactions()) {
-          System.out.printf("[%d] value %.2f%n", (i + 1), t);
+          System.out.printf("[%d] value %2f", (i + 1), t);
         }
       }
     }
+    System.out.println();
     return true;
   }
 }
