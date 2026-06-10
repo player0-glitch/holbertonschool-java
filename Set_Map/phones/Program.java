@@ -19,28 +19,28 @@ public class Program {
     phoneList1.addPhone("Carlos Alberto", phone4);
     phoneList1.addPhone("Carlos Alberto", phone6);
 
-    ArrayList<Phone> phone1 = phoneList1.isFind("John Doe");
-    if (phone1 == null)
+    ArrayList<Phone> phones1 = phoneList1.isFind("John Doe");
+    if (phones1 == null)
       System.out.println("Phones not found");
     else
-      System.out.println(phone1);
+      System.out.println(phones1);
 
-    ArrayList<Phone> phone2 = phoneList1.isFind("Tom Smith");
-    if (phone2 == null)
+    ArrayList<Phone> phones2 = phoneList1.isFind("Tom Smith");
+    if (phones2 == null)
       System.out.println("Phones not found");
     else
-      System.out.println(phone2);
+      System.out.println(phones2);
 
-    ArrayList<Phone> phone3 = phoneList1.isFind("Carlos Alberto");
-    if (phone3 == null)
+    ArrayList<Phone> phones3 = phoneList1.isFind("Carlos Alberto");
+    if (phones3 == null)
       System.out.println("Phones not found");
     else
-      System.out.println(phone3);
+      System.out.println(phones3);
 
-    ArrayList<Phone> phone4 = phoneList1.isFind("Richard Bob");
-    if (phone4 == null)
+    ArrayList<Phone> phones4 = phoneList1.isFind("Richard Bob");
+    if (phones4 == null)
       System.out.println("Phones not found");
     else
-      System.out.println(phone4);
+      System.out.println(phones4);
   }
 }
