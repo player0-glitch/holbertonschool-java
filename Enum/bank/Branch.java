@@ -34,7 +34,7 @@ public class Branch {
     return false;
   }
 
-  public boolean addCustomer(String customerName, double amount) {
+  public boolean newCustomer(String customerName, double amount) {
     Customer customer = findCustomer(customerName);
     if (customer == null) {
       this.customers.add(new Customer(customerName, amount));
