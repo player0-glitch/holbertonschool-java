@@ -11,6 +11,6 @@ class Food {
 
   @Override
   public String toString() {
-    return String.format("[%s] %d $ %.2f", name, calories, price);
+    return String.format("[%s] %d $ %f", name, calories, price);
   }
 }
