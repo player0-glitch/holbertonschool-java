@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class Program {
   public static void main(String[] args) {
@@ -9,7 +8,6 @@ public class Program {
     Video video1 = new Video("Learning Java Generics", 25);
     Video video2 = new Video("Introducing Wildcards in Java Generics", 25);
 
-    Newspaper newspaper1 = new Newspaper("The New York Times", 130);
     Newspaper newspaper2 = new Newspaper("The Wall Street Journal", 113);
 
     Library<Book> bookLibrary = new Library<>();

@@ -1,4 +1,3 @@
-
 interface Storable<T> {
   void addToInventory(String name, T value);
 
